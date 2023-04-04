@@ -8,7 +8,6 @@ function TodoItem( { id, text, done } ) {
   const dispatch = useDispatch();
   return (
     <li className={done? 'checked' : 'todo-item'} onClick={()=> dispatch( doneTodo({id}))}>
-      {/* <input type="checkbox" checked={done} onChange={()=> dispatch( doneTodo({id}))} /> */}
       <span>{text}</span>
       <button onClick={() => dispatch(removeTodo({id}))}>&times;</button>
 

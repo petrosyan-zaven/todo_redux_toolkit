@@ -2,20 +2,33 @@
     margin: 0 ; padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .App {
-    width: 300px;
-    margin: 20px auto;
+    position: relative;
+    width: 400px;
+    margin: 200px auto;
         .add-todo {
             display: flex;
             justify-content: space-between;
+            input {
+                width: 200px;
+                height: 25px;
+            }
             button {
                 margin-left: 10px;
             }
             button:hover {
                 cursor: pointer;
             }
+        }
+        select {
+            margin: 5px 0;
+            position: absolute;
+            right: 75px;
+            top: -5px;
+            height: 25px;
         }
         .todo-list {
             width: 100%;
